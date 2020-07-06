@@ -9,11 +9,12 @@ body{
     height: 95px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__img{
     width: 200px;
-    margin-top: 10;
+    margin-top: 8px;
     margin-left: 18px;
 }
 .header__menu{
@@ -21,13 +22,13 @@ body{
 }
 
 .header__menu ul{
-    /* display: none; */
+    display: none;
     list-style: none;
     padding: 0;
     position: absolute;
     width: 100px;
     text-align: right;
-    margin: 0px 0px 0px -14px;
+    margin: 0;
 }
 .header__menu:hover ul, ul:hover{
     display: block;
@@ -41,11 +42,21 @@ body{
     text-decoration: none;
 }
 
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+
 .header__menu--profile{
     margin-right: 8px;
     display: flex;
+    align-items: center;
 }
 
 .header__menu--profile img{
+    margin-right: 8px;
     width: 50px;
+}
+
+.header__menu--profile p{
+    color: white;
 }
